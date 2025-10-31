@@ -4,9 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta name="description" content="Discover fascinating nutrition facts of the day with our sci-fi themed nutrition app">
+  <title>Nutrition Fact of the Day | Sci-Fi Nutrition</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  Hello World!
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+  
+  <main class="container">
+    <header class="header">
+      <h1 class="title">
+        <span class="title-main">NUTRITION</span>
+        <span class="title-sub">FACT OF THE DAY</span>
+      </h1>
+      <div class="date-display" id="dateDisplay"></div>
+    </header>
+
+    <div class="fact-card" id="factCard">
+      <div class="card-glow"></div>
+      <div class="fact-content">
+        <div class="fact-number" id="factNumber">#001</div>
+        <h2 class="fact-title" id="factTitle">Loading...</h2>
+        <p class="fact-description" id="factDescription"></p>
+        <div class="fact-details" id="factDetails"></div>
+      </div>
+      <div class="card-border"></div>
+    </div>
+
+    <div class="controls">
+      <button class="btn btn-primary" id="newFactBtn">
+        <span class="btn-text">New Fact</span>
+        <span class="btn-glow"></span>
+      </button>
+      <button class="btn btn-secondary" id="shareBtn">
+        <span class="btn-text">Share</span>
+        <span class="btn-glow"></span>
+      </button>
+    </div>
+
+    <footer class="footer">
+      <p>Powered by Advanced Nutrition Analytics</p>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 {
-  "name": "hello-world",
+  "name": "nutrition-fact-of-the-day",
   "version": "1.0.0",
-  "description": "Hello World",
+  "description": "Sci-Fi themed Nutrition Fact of the Day application",
   "main": "src/main.js",
   "scripts": {
     "css:test": "rimraf ./backstop_data/bitmaps_test && backstop test --config=config/backstop/backstopConfig",
