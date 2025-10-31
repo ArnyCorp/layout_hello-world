@@ -4,9 +4,101 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>NutriVerse - Daily Nutrition Facts</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  Hello World!
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+  
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <div class="logo-icon">
+          <div class="atom">
+            <div class="electron"></div>
+            <div class="electron"></div>
+            <div class="electron"></div>
+          </div>
+        </div>
+        <h1 class="title">NutriVerse</h1>
+      </div>
+      <p class="subtitle">Daily Nutritional Intelligence</p>
+    </header>
+
+    <main class="main-content">
+      <div class="fact-container">
+        <div class="fact-header">
+          <div class="date-badge">
+            <span class="day-label">Day</span>
+            <span class="day-number" id="dayNumber">001</span>
+          </div>
+          <div class="category-badge" id="category">
+            <span class="category-icon">◆</span>
+            <span id="categoryText">Loading...</span>
+          </div>
+        </div>
+
+        <div class="fact-card">
+          <div class="card-inner">
+            <div class="hologram-effect"></div>
+            <h2 class="fact-title" id="factTitle">Initializing Database...</h2>
+            <p class="fact-description" id="factDescription">
+              Scanning nutritional data streams...
+            </p>
+            
+            <div class="fact-details" id="factDetails">
+              <div class="detail-item">
+                <span class="detail-icon">▸</span>
+                <span class="detail-text">Establishing connection...</span>
+              </div>
+            </div>
+
+            <div class="source-info" id="sourceInfo">
+              <span class="source-label">Data Source:</span>
+              <span class="source-text">Nutritional Research Database</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button class="btn btn-secondary" id="prevBtn">
+            <span class="btn-icon">←</span>
+            Previous
+          </button>
+          <button class="btn btn-primary" id="nextBtn">
+            Next
+            <span class="btn-icon">→</span>
+          </button>
+          <button class="btn btn-accent" id="randomBtn">
+            <span class="btn-icon">◈</span>
+            Random Fact
+          </button>
+        </div>
+
+        <div class="stats-panel">
+          <div class="stat-item">
+            <div class="stat-number" id="totalFacts">30</div>
+            <div class="stat-label">Total Facts</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="factsViewed">0</div>
+            <div class="stat-label">Facts Viewed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" id="favoritesCount">0</div>
+            <div class="stat-label">Favorites</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 NutriVerse | Powered by Nutritional Science</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
